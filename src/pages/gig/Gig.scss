@@ -1,0 +1,246 @@
+.gig{
+    display: flex;
+    justify-content: center;
+    .container{
+        width: 1200px;
+        padding: 30px 0;
+        display: flex;
+        gap: 50px;
+        
+        .left{
+            flex: 2;
+            flex-direction: column;
+            gap: 20px;
+          .breadCrumbs{
+            font-weight: 300;
+            font-size: 13px;
+            color: #555;
+          }
+          // h1{
+
+          // }
+          .user{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            .pp{
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+            }
+            span{
+              font-size: 14px;
+              font-weight: 500;
+            }
+            .stars{
+              display: flex;
+              align-items: center;
+              gap: 5px;
+
+              img{
+                width: 14px;
+                height: 14px;
+              }
+              span{
+                font-size: 14px;
+                font-weight: bold;
+                color: #ffc108;
+              }
+
+            }
+          }
+          .slider{
+            img{
+                max-height: 500px;
+                object-fit: contain;
+            }
+          }
+
+          h2{
+            font-weight: 400;
+          }
+          p{
+            color: #555;
+            font-weight: 300;
+            line-height: 25px;
+          }
+
+          .seller{
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .user{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                img{
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                }
+
+                .info{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    .stars{
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+          
+                        img{
+                          width: 14px;
+                          height: 14px;
+                        }
+                        span{
+                          font-size: 14px;
+                          font-weight: bold;
+                          color: #ffc108;
+                        }
+          
+                      }
+
+                      button{
+                        padding: 10px 10px;
+                        width: max-content;
+                        border: 1px solid gray;
+                        background-color: white;
+                        border-radius: 5px;
+                        cursor: pointer;
+                      }
+                    
+                }
+            }
+            .box{
+                border: 1px solid lightgray;
+                border-radius: 5px;
+                padding: 20px;
+                margin-top: 20px;
+    
+                .items{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    .item{
+
+                       width: 300px;
+                       display: flex;
+                       flex-direction: column;
+                       gap: 10px;
+                       margin-bottom: 20px;
+    
+                       .title{
+                         font-weight: 300;
+                       }
+                      //  .desc{
+    
+                      //  }
+                       .stars{
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+          
+                        img{
+                          width: 14px;
+                          height: 14px;
+                        }
+                        span{
+                          font-size: 14px;
+                          font-weight: bold;
+                          color: #ffc108;
+                        }
+          
+                      }
+                    }
+                }
+                hr{
+                    height: 0;
+                    border: 1px solid lightgray;
+                    margin-bottom: 20px;
+                }
+                
+              }
+          }
+          
+          
+          hr{
+            height: 0;
+            border: 0.5px solid lightgray;
+            margin: 30px 0px;
+          }
+        }
+        .right{
+           flex: 1;
+           display: flex;
+           flex-direction: column;
+           padding: 20px;
+           border: 1px solid lightgray;
+           border-radius: 5px;
+           gap: 10px;
+           position: sticky;
+           top: 150px;
+           height: max-content;
+           max-height: 500px;
+
+           .price{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            h2{
+                font-weight: 300;
+                color: gray;
+            }
+            h3{
+                font-weight: 500;
+            }
+           }
+           p{
+            color: gray;
+            margin: 10px 0;
+           }
+           .details{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+
+            .item{
+                 display: flex;
+                 align-items: center;
+                 gap: 10px;
+                img{
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+           }
+           .features{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            // background-color: white;
+            .item{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                color: gray;
+                font-weight: 300;
+                img{
+                    width: 14px;
+                }
+            }
+           }
+           button{
+            padding: 10px 10px;
+            background-color: #1dbf73;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+           }
+        }
+    }
+}
