@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import "./Gigs.scss";
 // import { gigs } from '../../data';
-// import GigCard from '../../components/gigCard/gigCard';
+import GigCard from '../../components/gigCard/gigCard';
 import { useQuery } from '@tanstack/react-query';
 import newRequest from '../../utils/newRequests';
 import { useLocation } from 'react-router-dom';
@@ -71,7 +71,7 @@ const Gigs = () => {
          error?
          "something went wrong!" 
          :data.map(gig =>{
-          // <GigCard key={gig._id} item = {gig}/> 
+           <GigCard key={gig._id} item = {gig} /> 
          }
          )}
         </div>
